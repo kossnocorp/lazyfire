@@ -1,0 +1,30 @@
+{
+  "name": "lazyfire",
+  "version": "0.5.0",
+  "description": "⚡ Speed up your Firebase web app",
+  "main": "index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "rm -rf lib && tsc && npx tsc --outDir lib/esm --module es2020 && cp package.json ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kossnocorp/lazyfire.git"
+  },
+  "keywords": [
+    "Firebase"
+  ],
+  "author": "Sasha Koss <koss@nocorp.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kossnocorp/lazyfire/issues"
+  },
+  "homepage": "https://github.com/kossnocorp/lazyfire#readme",
+  "dependencies": {
+    "firebase": "8"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}
